@@ -1,0 +1,97 @@
+/* 初期状態 */
+
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: dodgerblue;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.navbar:last-of-type {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+button {
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  height: 30%;
+  text-align: center;
+}
+
+/* No1 */
+.nav-1 {
+  padding: 0 50px;
+}
+
+.ul-1 {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+/* No2 */
+.nav-2 {
+  justify-content: space-between;
+  padding: 0 50px;
+  position: relative;
+}
+
+.ul-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* No3 */
+.nav-3 {
+  padding: 0 50px;
+}
+
+.h1-3 {
+  order: 2;
+  margin-left: auto;
+}
+
+.button-3 {
+  margin-left: 50px;
+}
